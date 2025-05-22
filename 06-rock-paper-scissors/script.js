@@ -4,15 +4,11 @@ function getRandomComputerResult() {
   return options[randomIndex];
 }
 function hasPlayerWonTheRound(player, computer) {
-  let hasWon = false;
-  if (
+  return (
     (player === "Rock" && computer === "Scissors") ||
     (player === "Scissors" && computer === "Paper") ||
     (player === "Paper" && computer === "Rock")
-  ) {
-    hasWon = true;
-  }
-  return hasWon;
+  );
 }
 
 console.log(hasPlayerWonTheRound("Rock", "Scissors"));
